@@ -1,0 +1,22 @@
+{
+  "name": "playwrightts",
+  "version": "1.0.0",
+  "description": "Playwright framework with TypeScript",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AtulKrSharma/PlaywrightTS.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AtulKrSharma/PlaywrightTS/issues"
+  },
+  "homepage": "https://github.com/AtulKrSharma/PlaywrightTS#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.44.1",
+    "@types/node": "^20.14.2"
+  }
+}

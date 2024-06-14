@@ -30,7 +30,8 @@ console.log(await response.json());
 const responseBody=await response.json()
 
 expect(response.status()).toBe(200);
-expect(responseBody.data.insert_todos).toHaveProperty('title');
+expect(responseBody.data.insert_todos.returning[0]).toHaveProperty('title');
+expect(responseBody.data.insert_todos.returning[0].title).toEqual(randomTitle)
 
 
 })

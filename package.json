@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "description": "Playwright framework with TypeScript",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+  "atul":"npx playwright test --ui"
+
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AtulKrSharma/PlaywrightTS.git"

@@ -1,4 +1,4 @@
-import { test, Page, expect } from '@playwright/test';
+import { test, expect } from '@playwright/test';
 
 test.describe('GUI', () => {
   //this is good
@@ -15,13 +15,28 @@ test.describe('GUI', () => {
     expect(pageTitle).toEqual('STORE');
   });
 
+  test('test name', async function f({ page }) {
+    await page.goto('https://demoblaze.com/');
+    const pageTitle = page.title();
+    expect(pageTitle).toEqual('STORE');
+  })
+
   //this is good
   test('gui test-3', async ({ page }) => {
     await page.goto('https://demoblaze.com/');
     console.log(page.title());
     await expect(page).toHaveTitle('STORE');
   });
+
+  test('get Attribute', async ({ page }) => {
+    await page.goto("http://www.yahoo.com")
+    const attribute = await page.locator(".class").getAttribute('value')
+    console.log(attribute)
+  })
+
 });
+
+
 
 // Asynchronous Matchers: These matchers return a promise and need await to ensure that the test waits for the assertion to complete. Common examples include:
 
